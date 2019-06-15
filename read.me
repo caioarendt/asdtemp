@@ -1,0 +1,50 @@
+aff_string/aff_string.c
+Cree un function que affiche le string passe en parametres, avec un return apres le string. Si il n'y a pas de string, affiche return.
+Functions allowed: write
+
+example:
+~$./a.out "Hello World"
+~$Hello World
+~$./a.out hello world
+~$hello
+~$./a.out
+~
+--------------------------------------------------------------------------------
+do_op/do_op.c
+Functions allowed: printf, atoi
+Cree un function que prends 3 string en parametre, e affiche le result a l'ecranavec un return a la ligne apres le resultar, et si il y a moins the 3 parametres passe, affiche 0 avec return.
+example:
+~$./a.out "42" "+" 42
+~$84
+~$./a.out "42" "/" 42
+~$1
+~$./a.out 42 "*"
+~$0
+~$
+--------------------------------------------------------------------------------
+rubino/rubino.c
+Functions allowed: write
+Cree un function qui pren le string, e retour le prochain characteres de l'alphabet. Case sensitive. Si le char est 'z' transform en 'a'.
+example:
+~$./a.out "Abc"
+~$Bcd
+~$./a.out "abZ"
+~$bcA
+--------------------------------------------------------------------------------
+aff_prime_sum/aff_prime_sum.c (peut etre on peut avoir *.c et *.h je ne me rapelle pas tres bien)
+Functions allowed: write, exit
+Affiche le sum des les nombre *prime* jus'que le max passe en parametre.
+example:
+~$./a.out 5
+~$10
+~$./a.out 7
+~$17
+--------------------------------------------------------------------------------
+Astuce:
+int	main(int count, char **args)
+{
+	(void) count; // empty the count variable, count holds the number of values passed by the paramete args, i think, which can be accesed from args[1] and so on, was usefull in some question, when u wanna make sure u have 3 parameters
+;)
+	ft_name(args[1]);
+	return (0);
+}
